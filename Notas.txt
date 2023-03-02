@@ -1,0 +1,15 @@
+-Instalar node, con npm
+- correr npm init --yes
+-Instalar {
+	npm i express, dotenv
+}
+-Instalar en dev (npm i -D){
+	npm i -D nodemon
+	npm i -D cross-env
+}
+en el package.json agregar {
+	scripts: {
+		"dev": "cross-env NODE_ENV= dev nodemon src/index.js"
+	}
+}	//Con eso se soluciona el problema de variables de entorno
+	entre linux, windows y ios
